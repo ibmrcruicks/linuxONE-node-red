@@ -65,6 +65,10 @@ if using the hosting environment [LineONE Community Cloud](https://linuxone.clou
 ```
   ssh -L 8888:localhost:1880 -i <marist-key>.pem linux1@<marist-instance-ip>
 ```
+then start Node-RED as normal (assuming installed with the community scripts above)
+```
+node-red-start
+```
 This will allow you to access the Node-RED IDE by connecting to `localhost:8888` -- note the _localhost_ in the above command refers to the localhost known to the LinuxONE system.
 
 ![node-red ide](l1cc-nr-ssh.png)
